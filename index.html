@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RONAF-ALVOS | Comércio e Prestação de Serviços</title>
+    <meta name="description" content="Constituição de Empresas, Alvarás, Limpeza e Serviços Administrativos no Lubango, Huíla." />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            colors: {
+              primary: {
+                DEFAULT: '#064e3b', // emerald-900
+                light: '#059669', // emerald-600
+                dark: '#022c22', // emerald-950
+              },
+              secondary: {
+                DEFAULT: '#1e293b', // slate-800
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html { 
+        scroll-behavior: smooth; 
+        scroll-padding-top: 100px; /* Compensate for fixed header */
+      }
+      body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50 text-slate-800">
+    <div id="root"></div>
+  </body>
+</html>
