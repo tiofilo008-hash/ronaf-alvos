@@ -10,7 +10,7 @@ const LocationContact: React.FC = () => {
           <p className="text-slate-600">Estamos prontos para atender a sua solicitação.</p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto mb-16">
           {/* Contact Info */}
           <div className="space-y-8">
             <div className="flex items-start gap-4">
@@ -84,6 +84,22 @@ const LocationContact: React.FC = () => {
                 Enviar Mensagem
               </button>
             </form>
+          </div>
+        </div>
+
+        {/* Map */}
+        <div className="max-w-5xl mx-auto">
+          <div className="rounded-2xl overflow-hidden shadow-lg border border-slate-100 h-[400px] relative z-0">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3856.786967733221!2d13.4916!3d-14.9167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1bb631bd7d4905bf%3A0x6291612027599723!2sLubango%2C%20Angola!5e0!3m2!1sen!2sus!4v1647856789012!5m2!1sen!2sus" 
+              width="100%" 
+              height="100%" 
+              style={{ border: 0 }} 
+              allowFullScreen 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Mapa de Localização"
+            ></iframe>
           </div>
         </div>
       </div>
