@@ -32,7 +32,8 @@ const Header: React.FC = () => {
     { name: 'Início', href: '#home' },
     { name: 'Sobre', href: '#about' },
     { name: 'Serviços', href: '#services' },
-    { name: 'Benefícios', href: '#benefits' },
+    { name: 'Galeria', href: '#gallery' },
+    { name: 'FAQ', href: '#faq' },
     { name: 'Contato', href: '#contact' },
   ];
 
@@ -65,7 +66,7 @@ const Header: React.FC = () => {
         </a>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -81,7 +82,7 @@ const Header: React.FC = () => {
           <a
             href="#contact"
             onClick={(e) => handleNavClick(e, '#contact')}
-            className={`px-6 py-2 rounded-full text-sm font-semibold transition-all hover:shadow-lg hover:-translate-y-0.5 cursor-pointer ${
+            className={`ml-2 px-5 py-2 rounded-full text-sm font-semibold transition-all hover:shadow-lg hover:-translate-y-0.5 cursor-pointer ${
               isScrolled 
                 ? 'bg-primary text-white hover:bg-primary-dark' 
                 : 'bg-white text-primary hover:bg-slate-100'
